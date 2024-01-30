@@ -1,0 +1,104 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+
+.navbar {
+    background-color: rgb(20, 88, 37);
+    color: aliceblue;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nicepage {
+    font-size: x-large;
+    color: aqua;
+    margin-right: 850px;
+
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    display: inline;
+    padding-left: 10px;
+    font-size: medium;
+}
+
+
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box1,
+.box2,
+.box3 {
+    flex: 1;
+    max-width: 100%;
+}
+
+.box1 {
+    border-width: 70px;
+    text-align: center;
+    padding: 10%;
+    border-color: rgb(147, 234, 241);
+    background-color: rgb(84, 202, 198);
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.box2 {
+    padding: 60px;
+    border-radius: 29px;
+    border: solid 5px white;
+    font-size: x-large;
+    flex-wrap: wrap;
+
+}
+
+button {
+    padding: 10px;
+}
+
+.box3 {
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.box3 img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-width: 300px) {
+  
+    .box3 {
+        flex: 1;
+        max-width: calc(90% -200%); 
+    }
+
+    .box3 {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    li:not(:first-child) {
+        font-size: 0;
+    }
+
+    li i {
+        font-size: medium; 
+    }
+}
